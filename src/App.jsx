@@ -69,7 +69,7 @@ export default function ClaimProcessor() {
     formData.append('claim_date', claimDate);
 
     try {
-      const res = await fetch('http://localhost:5000/api/process-claim', {
+      const res = await fetch('https://claims-adjudicator.onrender.com/api/process-claim', {
         method: 'POST',
         body: formData,
       });
